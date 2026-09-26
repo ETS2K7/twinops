@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / AST
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment & Secrets (allows .env.example templates)
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Testing, Coverage & Type Checking
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Databases & Runtime Logs
+*.log
+*.sqlite
+*.sqlite3
+
+# Node / TrueForge Runtime
+node_modules/
+npm-debug.log*
+
+# OS & Editor artifacts
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Agent instructions & plans
+AGENTS.md
+agents.md
+IMPLEMENTATION_PLAN.md
+implementation_plan.md
