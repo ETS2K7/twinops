@@ -1,0 +1,23 @@
+{
+  "name": "twinops",
+  "description": "Autonomous SRE agent with digital twin sandboxing and human-in-the-loop canary guardrails.",
+  "connectors": [
+    {
+      "name": "twinops-tools",
+      "transport": "sse",
+      "url": "http://localhost:8000/sse"
+    }
+  ],
+  "tools": [
+    "fetch_incident_telemetry",
+    "run_digital_twin_sandbox",
+    "deploy_canary_remediation"
+  ],
+  "require_approval_for_tools": [
+    "deploy_canary_remediation"
+  ],
+  "model": {
+    "provider": "google",
+    "name": "gemini-2.5-flash"
+  }
+}
